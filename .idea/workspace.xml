@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="527dabbf-daf9-4041-81c1-c67569a0658e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/source/static/es/es复习.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/_posts/mq/rabbitmqApi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/static/mq/mq.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/es/es练习.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/es/es练习.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/mq/kafak.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/mq/kafak.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/mq/rabbitmq.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/mq/rabbitmq.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/mq/rabbitmq介绍.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/mq/rabbitmq介绍.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/themes/hexo-theme-matery/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/themes/hexo-theme-matery/_config.yml" afterDir="false" />
     </list>
@@ -21,35 +22,11 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/redis/redis持久化.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="801">
-                <caret line="82" selection-start-line="82" selection-end-line="82" selection-end-column="40" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/es/es练习.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="493">
-                <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/es/es操作.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="615">
-                <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
+              <first_editor relative-caret-position="1843">
+                <caret line="97" selection-start-line="97" selection-end-line="97" />
               </first_editor>
               <second_editor />
             </state>
@@ -60,7 +37,7 @@
         <entry file="file://$PROJECT_DIR$/source/_posts/es/es-dsl.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-242">
+              <first_editor relative-caret-position="11799">
                 <caret line="621" selection-start-line="621" selection-end-line="621" />
               </first_editor>
               <second_editor />
@@ -72,20 +49,20 @@
         <entry file="file://$PROJECT_DIR$/source/_posts/es/es-springboot.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="960">
-                <caret line="227" lean-forward="true" selection-start-line="227" selection-end-line="227" />
+              <first_editor relative-caret-position="4313">
+                <caret line="227" selection-start-line="227" selection-end-line="227" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/mq/kafak.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="361">
-                <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+                <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
               </first_editor>
               <second_editor />
             </state>
@@ -96,8 +73,32 @@
         <entry file="file://$PROJECT_DIR$/source/_posts/mq/rabbitmq.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1406">
-                <caret line="74" selection-start-line="74" selection-end-line="74" selection-end-column="30" />
+              <first_editor relative-caret-position="649">
+                <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_posts/nginx/ngonx-ha.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="2223">
+                <caret line="117" selection-start-line="117" selection-end-line="117" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/mq/rabbitmqApi.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="114">
+                <caret line="6" selection-start-line="6" selection-end-line="6" />
               </first_editor>
               <second_editor />
             </state>
@@ -108,8 +109,8 @@
         <entry file="file://$PROJECT_DIR$/source/_posts/mq/rabbitmq介绍.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="648">
-                <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+              <first_editor relative-caret-position="114">
+                <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
               </first_editor>
               <second_editor />
             </state>
@@ -153,6 +154,7 @@
       <find>[]</find>
       <find>subtitle</find>
       <find>![]</find>
+      <find>confirm</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -161,7 +163,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/_posts/mysql行锁.md" />
         <option value="$PROJECT_DIR$/source/_posts/中间件/sharding-jdba.md" />
         <option value="$PROJECT_DIR$/source/_posts/中间件/kafka入门.md" />
         <option value="$PROJECT_DIR$/source/_posts/mybatis/mybatis缓存.md" />
@@ -192,7 +193,6 @@
         <option value="$PROJECT_DIR$/source/_posts/redis/redis线程模型.md" />
         <option value="$PROJECT_DIR$/source/_posts/并发编程/volatile分析.md" />
         <option value="$PROJECT_DIR$/source/_posts/多线程/多线程.md" />
-        <option value="$PROJECT_DIR$/source/_posts/mq/rabbitmq.md" />
         <option value="$PROJECT_DIR$/source/_posts/设计模式/工厂方法模式.md" />
         <option value="$PROJECT_DIR$/source/_posts/设计模式/适配器模式.md" />
         <option value="$PROJECT_DIR$/source/_posts/设计模式/桥接模式.md" />
@@ -210,16 +210,16 @@
         <option value="$PROJECT_DIR$/source/_posts/es/es操作.md" />
         <option value="$PROJECT_DIR$/source/_posts/es/es-dsl.md" />
         <option value="$PROJECT_DIR$/source/_posts/es/es-springboot.md" />
-        <option value="$PROJECT_DIR$/source/_posts/mq/rabbitmq介绍.md" />
         <option value="$PROJECT_DIR$/source/_posts/mq/kafak.md" />
+        <option value="$PROJECT_DIR$/source/_posts/mq/rabbitmq介绍.md" />
+        <option value="$PROJECT_DIR$/source/_posts/mq/rabbitmqApi.md" />
+        <option value="$PROJECT_DIR$/source/_posts/mq/rabbitmq.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="170" />
-    <option name="y" value="23" />
-    <option name="width" value="1368" />
-    <option name="height" value="981" />
+    <option name="width" value="1680" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -227,7 +227,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -334,12 +333,20 @@
               <item name="blog" type="462c0819:PsiDirectoryNode" />
               <item name="source" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="mq" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="mysql" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -350,11 +357,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/static/mq" />
       <recent name="$PROJECT_DIR$/source/_posts/mq" />
       <recent name="$PROJECT_DIR$/source/static/es" />
       <recent name="$PROJECT_DIR$/source/_posts/es" />
       <recent name="$PROJECT_DIR$/source/_posts/nginx" />
-      <recent name="$PROJECT_DIR$/source/static/mysql" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/source/_posts/mq" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -469,18 +479,20 @@
       <workItem from="1630733814569" duration="1491000" />
       <workItem from="1630805692716" duration="2339000" />
       <workItem from="1630987807284" duration="631000" />
-      <workItem from="1631410112868" duration="3644000" />
+      <workItem from="1631410112868" duration="3854000" />
+      <workItem from="1631498274538" duration="1077000" />
+      <workItem from="1631534995430" duration="3100000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144111000" />
+    <option name="totallyTimeSpent" value="148498000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25256178" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2591923" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -505,28 +517,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/_posts/并发编程/volatile分析.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="114">
-            <caret line="6" selection-start-line="6" selection-end-line="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/static/mq/消息落库.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/static/mq/confirm确认消息.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/static/mq/return机制.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/static/kafka/1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/设计模式/桥接模式.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -772,16 +762,6 @@
     <entry file="file://$PROJECT_DIR$/source/static/es/es-3.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/nginx/ngonx-ha.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="2223">
-            <caret line="117" selection-start-line="117" selection-end-line="117" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/_posts/nginx/lvs-nginx.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -794,6 +774,69 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/source/static/es/es-5.jpg">
       <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/static/es/es复习.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/redis/redis持久化.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1558">
+            <caret line="82" selection-start-line="82" selection-end-line="82" selection-end-column="40" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/es/es练习.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="665">
+            <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/es/es操作.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1843">
+            <caret line="97" selection-start-line="97" selection-end-line="97" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/es/es-dsl.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="11799">
+            <caret line="621" selection-start-line="621" selection-end-line="621" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/es/es-springboot.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="4313">
+            <caret line="227" selection-start-line="227" selection-end-line="227" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/mq/kafak.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="361">
+            <caret line="19" column="6" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/source/static/es/es-4.jpg">
       <provider selected="true" editor-type-id="images" />
@@ -808,54 +851,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/redis/redis持久化.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="801">
-            <caret line="82" selection-start-line="82" selection-end-line="82" selection-end-column="40" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/es/es练习.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="493">
-            <caret line="35" column="18" lean-forward="true" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/es/es操作.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="615">
-            <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/es/es-dsl.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-242">
-            <caret line="621" selection-start-line="621" selection-end-line="621" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/static/es/es复习.jpg">
+    <entry file="file://$PROJECT_DIR$/source/static/mq/confirm确认消息.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/es/es-springboot.md">
+    <entry file="file://$PROJECT_DIR$/source/static/mq/return机制.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/static/mq/mq.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/mq/rabbitmq介绍.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="960">
-            <caret line="227" lean-forward="true" selection-start-line="227" selection-end-line="227" />
+          <first_editor relative-caret-position="114">
+            <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/static/mq/消息落库.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/mq/rabbitmqApi.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="114">
+            <caret line="6" selection-start-line="6" selection-end-line="6" />
           </first_editor>
           <second_editor />
         </state>
@@ -864,28 +886,18 @@
     <entry file="file://$PROJECT_DIR$/source/_posts/mq/rabbitmq.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1406">
-            <caret line="74" selection-start-line="74" selection-end-line="74" selection-end-column="30" />
+          <first_editor relative-caret-position="649">
+            <caret line="117" column="1" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/mq/rabbitmq介绍.md">
+    <entry file="file://$PROJECT_DIR$/source/_posts/nginx/ngonx-ha.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="648">
-            <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/mq/kafak.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="361">
-            <caret line="19" column="6" lean-forward="true" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+          <first_editor relative-caret-position="2223">
+            <caret line="117" selection-start-line="117" selection-end-line="117" />
           </first_editor>
           <second_editor />
         </state>

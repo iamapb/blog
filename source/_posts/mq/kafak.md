@@ -122,8 +122,37 @@ tags: kafka
   
   
   ```
-
 - 
+
+## 5 kafka 生产者核心概念
+   1.1发送消息体: Class ProducerRecord<K, V> {
+   >    String topic;
+        Integer partition;
+        Headers headers;
+        K key;
+        V value;
+        Long timestamp;
+           
+   1.2 必要的参数配置:
+   >    bootstrap.servers: ip 节点集群
+        key.serializer     二进制的消息进行发送和接收
+        value.serializer   
+        client.id         生产者的id
+        Producer.Config
+         
+   1.3 kafkaProducer是线程安全的 retires 参数 重复发送
+   1.4 kafka生产者重要的参数     
+   > acks: 指定发送消息后，Broker端至少有多少个副本接收到该消息:默认为 acks=1;
+     acks=1; 主副本接收到消息了
+     acks=0; 生产者发送消息之后不需要等待任何服务器端的响应;
+     acks=-1 acks=all 生产者在发送消息之后，需要等待ISR中的所有副本都成功写入消息之后才能够收到来自服务端的成功响应  
+     
+              
+            
+         
+    
+    
+
 
 
 

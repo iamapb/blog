@@ -145,8 +145,11 @@ tags: kafka
    > acks: 指定发送消息后，Broker端至少有多少个副本接收到该消息:默认为 acks=1;
      acks=1; 主副本接收到消息了
      acks=0; 生产者发送消息之后不需要等待任何服务器端的响应;
-     acks=-1 acks=all 生产者在发送消息之后，需要等待ISR中的所有副本都成功写入消息之后才能够收到来自服务端的成功响应  
+     acks=-1 acks=all 生产者在发送消息之后，需要等待ISR中的所有副本都成功写入消息之后才能够收到来自服务端的成功响应
      
+## 6 kafka消费者
+   6.1 KafkaConsumer是线程非安全的,在kafkaConsumer中定义了一个acquire方法用来检测是否只有一个线程在操作，如果
+   有其他的线程操作则会抛出ConcurrentModifactionException，用来检测是否线程安全     
               
             
          

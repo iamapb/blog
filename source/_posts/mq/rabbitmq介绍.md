@@ -5,9 +5,6 @@ tags: rabbitmq
 ---
 
 ```xml
-
-
- / Java架构师-技术专家 / 阶段三 · 分布式消息队列-RabbitMQ
   
 
 1-7 RocketMQ集群架构与原理解析

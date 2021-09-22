@@ -64,6 +64,17 @@ lsof -i:15672 或者 netstat -tnlp | grep 15672
 
 ```
 
+### 2 exchange 交换机
+> 接受消息, 并根据路由键转发消息所绑定的队列
+  交换机类型: direct topic fanout headers
+  Auto delete : 当最后一个绑定到exchange上的队列删除后，自动删除该 exchange
+  
+  direct exchange 直连交换机
+>  所有发送到Direct exchange 的消息被转发到RouteKey中指定的queue 就是RouteKey 要和queue的名称全匹配
+   这样才能够发送过去.
+   注意: Direct 模式可以使用Rabbitmq 自带的Exchange： default exchange， 所以不需要将Exchange进行任何绑定
+   操作，消息传递时，RouteKey必须完全匹配才会被队列接收到，否则该消息会被抛弃
+
 ### 3  如何保证消息的100%的投递(一)
 1 保证消息的成功发出
 2 保证mq节点的成功接受
@@ -74,22 +85,36 @@ lsof -i:15672 或者 netstat -tnlp | grep 15672
 
 ![](/../../static/mq/消息落库.png)
 
-##1.如何保证消息没有重复消费
+##3.1如何保证消息没有重复消费
 
 方案: 消费端实现幂等性 意味着 我们的消息永远不会消费多次
 利用数据库的主键唯一性进行去重复 
 
-##2.confirm 确认消息 流程解析
+## 3.2.confirm 确认消息 流程解析
 ![](/../../static/mq/confirm确认消息.png)
 
 如何实现confirm 消息
 1 在channel上开启确认模式 channel.confirmSelect()
 2 在channel上面添加监听时间 addConfirmListener 监听成功和失败的返回结果, 进行后续的处理
 
-## 3 return 消息
+## 3.3 return 消息
 ![](/../../static/mq/return机制.pmg)
 
 ## 3 消费端的流控
-rabbitmq 
+ rabbitmq提供一种qos的功能，即在非自动确认消息的前提下，如果一定数据的消息未被确认前，不进行消费新的消息.
+ 
+ 方法: void BasicQos(unit prefetchSize, ushort prefetchCount, bool global);
+
+ 消费端的手工ack(成功) 和 nack(失败)
+ 
+ 消息的重回队列: 是为了对没有处理成功的消息，把消息重新会递给Broker！
+ 
+### 3.4 死信队列
+ 利用DLX，当消息在一个队列中变成死信之后，会被重新publish到另外一个Exchange，这个Exchange 就是DLX
+ 消息变成死信队列的几种情况:
+ 1 消息被拒绝(basic.reject/ basic.nack) 并且requeue=false
+ 2 消息TTL 过期
+ 3 队列达到最大长度
+   
 
 

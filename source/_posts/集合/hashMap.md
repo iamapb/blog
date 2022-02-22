@@ -19,3 +19,20 @@ JDK1.8 之后 HashMap 的组成多了红黑树，在满足下面两个条件之�
 
 + 链表长度大于阈值（默认为 8）
 + HashMap 数组长度超过 64
+
+### hashMap的长度为什么一定要是2的幂次方
+> 为了优化取模性能和降低哈希碰撞概率
+```
+   /**
+     * Returns a power of two size for the given target capacity.
+     */
+    static final int tableSizeFor(int cap) {
+        int n = cap - 1;
+        n |= n >>> 1;
+        n |= n >>> 2;
+        n |= n >>> 4;
+        n |= n >>> 8;
+        n |= n >>> 16;
+        return (n < 0) ? 1 : (n >= MAXIMUM_CAPACITY) ? MAXIMUM_CAPACITY : n + 1;
+    }
+```

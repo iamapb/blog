@@ -94,3 +94,13 @@ tags: docker
 
 
 ```
+
+```xml
+docker 删除镜像失败两种情况
+1 原因:
+    容器还存在是无法删除镜像的
+
+2 原因
+  容器不存在，删除镜像时候提示 No such image
+   docker 镜像文件是存在/var/lib/docker/image/overlay2/imagedb/content/sha256目录下的文件即可    
+```

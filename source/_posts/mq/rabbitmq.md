@@ -115,6 +115,19 @@ lsof -i:15672 或者 netstat -tnlp | grep 15672
  1 消息被拒绝(basic.reject/ basic.nack) 并且requeue=false
  2 消息TTL 过期
  3 队列达到最大长度
-   
+
+### windows10 安装rabbitmq
+```xml
+  1.windiws10 安装rabbitmq 需要安装erl 并且erl和 mq的版本需要一致
+  来源 https://www.rabbitmq.com/which-erlang.html
+  下载完成之后进行正常安装 erl 和 rabbitmq
+   2. 启动报错:
+
+   ![](/../../static/mq/mq启动报错.jpg)
+
+   3 解决办法:
+   到rabbitmq安装的指定路径, 执行set操作,
+   ![](/../../static/mq/mq启动.png)
+```   
 
 

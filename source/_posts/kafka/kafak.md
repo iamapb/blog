@@ -28,10 +28,11 @@ tags: kafka
   4 伸缩性  
   
 ## 3 kafka 相关概念:
-   topic:
+   topic: 一个
    partition: 
-   ISR:
-   OSR:
+   replica
+   ISR: kafka的follow副本的拉取集合，拉去的leader的数据在同步的时间容忍度的范围内， 能够准确的同步leader的数据
+   OSR: kafka的follow副本数据集合，拉取leader的数据是超出了时间的范围，不能够及时的同步leader的数据，获取的不是实时的数据
    HW: heigh watermark 高水位线，消费者最多能够拉取到高水位线的消息
    LEO: Log End Offset, 日志文件的最后一条记录的offset(偏移量)
    ISR集合与HW 和 LEO有关系
@@ -124,7 +125,7 @@ tags: kafka
   ```
 - 
 
-## 5 kafka 生产者核心概念
+## 5 kafka 生产者核心概念 producerRecord 
    1.1发送消息体: Class ProducerRecord<K, V> {
    >    String topic;
         Integer partition;
@@ -140,16 +141,28 @@ tags: kafka
         client.id         生产者的id
         Producer.Config
          
-   1.3 kafkaProducer是线程安全的 retires 参数 重复发送
+   1.3 kafkaProducer是线程安全的 
+   1.4 kafka消息发送的重试机制   retires 参数 重复发送
    1.4 kafka生产者重要的参数     
    > acks: 指定发送消息后，Broker端至少有多少个副本接收到该消息:默认为 acks=1;
      acks=1; 主副本接收到消息了
      acks=0; 生产者发送消息之后不需要等待任何服务器端的响应;
      acks=-1 acks=all 生产者在发送消息之后，需要等待ISR中的所有副本都成功写入消息之后才能够收到来自服务端的成功响应
+
+   1.5 acks=-a or acks=all 一定能够保证消息的可靠性投递吗 不一定 需要看min.insync.replaices 的值
+
+   max.request.size: 用来限制生产者客户端能够发送的消息的最大值
+   retries 和 retry.backoff.msretries 重试的次数和重试的间隔
+   batch.size 一次性批量发送的数据
+   buffer.memory: 缓存提升性能的参数
+
      
 ## 6 kafka消费者
    6.1 KafkaConsumer是线程非安全的,在kafkaConsumer中定义了一个acquire方法用来检测是否只有一个线程在操作，如果
-   有其他的线程操作则会抛出ConcurrentModifactionException，用来检测是否线程安全     
+   有其他的线程操作则会抛出ConcurrentModifactionException，用来检测是否线程安全    
+   6.2 kafka的消费模型 点对点和发布订阅模型的区分是根据  消费者组 这个概念来区分的
+      点对点的话 是根据不同的消费组
+      发布订阅模型的话 是同属于一个组 不同的消费者
               
             
          

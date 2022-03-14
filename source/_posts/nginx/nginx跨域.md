@@ -29,6 +29,8 @@ tags: nginx
 ####  1 Nginx 解决跨域问题
 > 在nginx的配置文件中加入一下配置内容就可以
 ```xml
+
+    在对应的ngxin.conf的配置文件去修改
     # 允许跨域请求的域， *代表所有
        add_header 'Access-Control-Allowe-Origin' *;
        # 允许带上cookie的请求
@@ -102,6 +104,49 @@ server {
         }
     }
 
+```
+
+## 5 nginx的负载均衡操作
+
+```xml
+   通过 upstream的反向代理去进行集群的分发
+   
+   
+   
+   upstream 指令参数 max_conns
+   限制每台server的连接数，用于保护避免过载，可起到限流作用
+   
+   weight 权重 用户进行任务分发 越大 分配的请求越多
+   
+   upstream tomcats {
+           server 192.168.1.173:8080 max_conns=2;
+           server 192.168.1.174:8080 max_conns=2;
+           server 192.168.1.175:8080 max_conns=2;
+   }
+  
+   Keepalived 提高吞吐量
+   keepalived： 设置长连接处理的数量
+   proxy_http_version：设置长连接http版本为1.1
+   proxy_set_header：清除connection header 信息
+   
+   upstream tomcats {
+   #       server 192.168.1.173:8080 max_fails=2 fail_timeout=1s;
+           server 192.168.1.190:8080;
+   #       server 192.168.1.174:8080 weight=1;
+   #       server 192.168.1.175:8080 weight=1;
+           keepalive 32;
+   }
+   
+   server {
+           listen       80;
+           server_name  www.tomcats.com;
+   
+           location / {
+               proxy_pass  http://tomcats;
+               proxy_http_version 1.1;
+               proxy_set_header Connection "";
+           }
+       }
 ```
 
       

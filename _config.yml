@@ -117,5 +117,5 @@ theme: hexo-theme-matery
 
 deploy:
   type: git
-  repo: root@47.98.232.65:/home/git/blog/hexo.git
+  repo: git@47.98.232.65:/var/repo/blog.git
   branch: master

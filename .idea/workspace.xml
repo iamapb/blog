@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="527dabbf-daf9-4041-81c1-c67569a0658e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/spring/spring-aop源码分析1.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/spring/spring-aop源码分析1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/算法/回溯算法.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/算法/回溯算法.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/算法/滑动窗口算法.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/算法/滑动窗口算法.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,19 +30,31 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/source/_posts/面试/面试总结.md">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/source/_posts/spring/spring-aop源码分析1.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="1140">
-                <caret line="60" selection-start-line="60" selection-end-line="60" />
+              <first_editor relative-caret-position="152">
+                <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/source/_posts/spring/spring-aop.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="1577">
+                <caret line="83" selection-start-line="83" selection-end-line="83" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/source/_posts/jvm/OOM.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -84,7 +99,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/source/_posts/pdf/pdf操作.md" />
         <option value="$PROJECT_DIR$/source/_posts/静态代理.md" />
         <option value="$PROJECT_DIR$/source/_posts/arrayList.md" />
         <option value="$PROJECT_DIR$/source/_posts/hashMap.md" />
@@ -135,6 +149,7 @@
         <option value="$PROJECT_DIR$/source/_posts/jvm/OOM.md" />
         <option value="$PROJECT_DIR$/source/_posts/jvm/jvm.md" />
         <option value="$PROJECT_DIR$/source/_posts/网络/UDP.md" />
+        <option value="$PROJECT_DIR$/source/_posts/spring/spring-aop源码分析1.md" />
       </list>
     </option>
   </component>
@@ -181,6 +196,13 @@
               <item name="source" type="462c0819:PsiDirectoryNode" />
               <item name="_posts" type="462c0819:PsiDirectoryNode" />
               <item name="mysql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
@@ -351,11 +373,14 @@
       <workItem from="1648213154554" duration="56000" />
       <workItem from="1648346406932" duration="8000" />
       <workItem from="1648356595301" duration="413000" />
+      <workItem from="1649076570587" duration="1405000" />
+      <workItem from="1649078608653" duration="1122000" />
+      <workItem from="1649164776741" duration="44000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174337000" />
+    <option name="totallyTimeSpent" value="176908000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="23" width="1633" height="1027" extended-state="6" />
@@ -385,24 +410,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/_posts/mybatis/mybatis缓存.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/nginx/nginx启动失败.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="437">
-            <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="34" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/source/static/es/es-2.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -720,6 +727,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/面试/面试总结.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="95">
+            <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2261">
@@ -727,11 +744,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/_posts/面试/面试总结.md">
+    <entry file="file://$PROJECT_DIR$/source/_posts/spring/spring-aop.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1140">
-            <caret line="60" selection-start-line="60" selection-end-line="60" />
+          <first_editor relative-caret-position="1577">
+            <caret line="83" selection-start-line="83" selection-end-line="83" />
           </first_editor>
           <second_editor />
         </state>
@@ -742,6 +759,16 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="190">
             <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/_posts/spring/spring-aop源码分析1.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="152">
+            <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>

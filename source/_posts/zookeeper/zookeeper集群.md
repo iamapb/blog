@@ -3,7 +3,7 @@ title: zookeeper集群
 date: 2021-09-14 21:14:48
 tags: zookeeper
 ---
-Zookeeper集群环境搭建：
+## 1.Zookeeper集群环境搭建：
 
 ```shell
 1. 准备工作：
@@ -118,4 +118,7 @@ chkconfig --list zookeeper
 
 如果上面的操作都正常的话；你就可以重启你的linux服务器了
 ```
+
+## 2 zookeeper说明
+
 

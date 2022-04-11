@@ -13,11 +13,12 @@ tags: es
 
 ```
 ## 2 安装es
-```xml
  1 修改核心配置文件 elasticesarch.yml
   1.1 修改es节点名称
   ![](/../../static/es/es-1.jpg)
+  
   ![](/../../static/es/es-2.jpg)
+  
   1.2 修改data数据地址和日志地址
   ![](/../../static/es/es-3.jpg)
   1.3 绑定es网络ip 和端口号
@@ -41,6 +42,15 @@ tags: es
   vm.max_map_count=262145
   
   sysctl -p 刷新一下
+  如果es启动成功了，但是客户端进行访问，客户端访问服务端出现错误
   
-
-```
+  ```xml
+    received plaintext http traffic on an https channel, closing connection
+    
+    因为ES默认开启了 ssl 认证。
+    修改elasticsearch.yml配置文件
+    将xpack.security.enabled设置为false
+  ```
+  这样就可以正确解决问题
+  ![](/../../static/es/es-success.png)
+ 

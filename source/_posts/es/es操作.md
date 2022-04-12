@@ -361,4 +361,252 @@ POST     /shop/_doc/_search
 }
 
 
+
+  
+
+3-16 附：DSL搜索 - 布尔查询
+可以组合多重查询
+
+must：查询必须匹配搜索条件，譬如 and
+should：查询匹配满足1个以上条件，譬如 or
+must_not：不匹配搜索条件，一个都不要满足
+实操1：
+
+POST     /shop/_doc/_search
+
+{
+    "query": {
+        "bool": {
+            "must": [
+                {
+                    "multi_match": {
+                        "query": "慕课网",
+                        "fields": ["desc", "nickname"]
+                    }
+                },
+                {
+                    "term": {
+                        "sex": 1
+                    }
+                },
+                {
+                    "term": {
+                        "birthday": "1996-01-14"
+                    }
+                }
+            ]
+        }
+    }
+}
+
+{
+    "query": {
+        "bool": {
+            "should（must_not）": [
+                {
+                    "multi_match": {
+                        "query": "学习",
+                        "fields": ["desc", "nickname"]
+                    }
+                },
+                {
+                	"match": {
+                		"desc": "游戏"
+                	}	
+                },
+                {
+                    "term": {
+                        "sex": 0
+                    }
+                }
+            ]
+        }
+    }
+}
+                   
+实操2：
+
+{
+    "query": {
+        "bool": {
+            "must": [
+                {
+                	"match": {
+                		"desc": "慕"
+                	}	
+                },
+                {
+                	"match": {
+                		"nickname": "慕"
+                	}	
+                }
+            ],
+            "should": [
+                {
+                	"match": {
+                		"sex": "0"
+                	}	
+                }
+            ],
+            "must_not": [
+                {
+                	"term": {
+                		"birthday": "1992-12-24"
+                	}	
+                }
+            ]
+        }
+    }
+}
+
+
+为指定词语加权
+特殊场景下，某些词语可以单独加权，这样可以排得更加靠前。
+
+POST     /shop/_doc/_search
+{
+    "query": {
+        "bool": {
+            "should": [
+            	{
+            		"match": {
+            			"desc": {
+            				"query": "律师",
+            				"boost": 18
+            			}
+            		}
+            	},
+            	{
+            		"match": {
+            			"desc": {
+            				"query": "进修",
+            				"boost": 2
+            			}
+            		}
+            	}
+            ]
+        }
+    }
+}
+
+3-18 附：DSL搜索 - 过滤器
+对搜索出来的结果进行数据过滤。不会到es库里去搜，不会去计算文档的相关度分数，所以过滤的性能会比较高，过滤器可以和全文搜索结合在一起使用。
+post_filter元素是一个顶层元素，只会对搜索结果进行过滤。不会计算数据的匹配度相关性分数，不会根据分数去排序，query则相反，会计算分数，也会按照分数去排序。
+使用场景：
+
+query：根据用户搜索条件检索匹配记录
+post_filter：用于查询后，对结果数据的筛选
+实操：查询账户金额大于80元，小于160元的用户。并且生日在1998-07-14的用户
+
+gte：大于等于
+lte：小于等于
+gt：大于
+lt：小于
+（除此以外还能做其他的match等操作也行）
+POST     /shop/_doc/_search
+
+{
+	"query": {
+		"match": {
+			"desc": "慕课网游戏"
+		}	
+    },
+    "post_filter": {
+		"range": {
+			"money": {
+				"gt": 60,
+				"lt": 1000
+			}
+		}
+	}	
+}
+
+
+
+
+3-20 附： DSL搜索 - 排序
+es的排序同sql，可以desc也可以asc。也支持组合排序。
+
+实操：
+
+POST     /shop/_doc/_search
+{
+	"query": {
+		"match": {
+			"desc": "慕课网游戏"
+		}
+    },
+    "post_filter": {
+    	"range": {
+    		"money": {
+    			"gt": 55.8,
+    			"lte": 155.8
+    		}
+    	}
+    },
+    "sort": [
+        {
+            "age": "desc"
+        },
+        {
+            "money": "desc"
+        }
+    ]
+}
+                            
+对文本排序
+由于文本会被分词，所以往往要去做排序会报错，通常我们可以为这个字段增加额外的一个附属属性，类型为keyword，用于做排序。
+
+创建新的索引
+POST        /shop2/_mapping
+{
+    "properties": {
+        "id": {
+            "type": "long"
+        },
+        "nickname": {
+            "type": "text",
+            "analyzer": "ik_max_word",
+            "fields": {
+                "keyword": {
+                    "type": "keyword"
+                }
+            }
+        }
+    }
+}
+
+                                                            
+插入数据
+POST         /shop2/_doc
+{
+    "id": 1001,
+    "nickname": "美丽的风景"
+}
+{
+    "id": 1002,
+    "nickname": "漂亮的小哥哥"
+}
+{
+    "id": 1003,
+    "nickname": "飞翔的巨鹰"
+}
+{
+    "id": 1004,
+    "nickname": "完美的天空"
+}
+{
+    "id": 1005,
+    "nickname": "广阔的海域"
+}                                                            
+排序
+{
+    "sort": [
+        {
+            "nickname.keyword": "desc"
+        }
+    ]
+}
+
+
 ```

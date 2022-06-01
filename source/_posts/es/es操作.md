@@ -128,7 +128,7 @@ POST     /shop/_doc/_search
 {
     "query": {
         "match": {
-            "desc": "慕课网"
+            "desc": "往往"
         }
     }
 }

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="527dabbf-daf9-4041-81c1-c67569a0658e" name="Default Changelist" comment="fix">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/_posts/jvm/垃圾收集器.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/jvm/垃圾收集器.md" afterDir="false" />
-    </list>
+    <list default="true" id="527dabbf-daf9-4041-81c1-c67569a0658e" name="Default Changelist" comment="fix" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -367,7 +364,7 @@
       <workItem from="1652017838083" duration="56000" />
       <workItem from="1652106107767" duration="115000" />
       <workItem from="1652885114798" duration="1500000" />
-      <workItem from="1654088604629" duration="3396000" />
+      <workItem from="1654088604629" duration="3713000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1649566599320</created>

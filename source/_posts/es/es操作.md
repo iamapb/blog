@@ -100,18 +100,13 @@ keyword：不做分词。把整个文本作为一个单独的关键词。
 
 GET     /shop/_doc/_search?q=desc:百度
 GET     /shop/_doc/_search?q=nickname:百&q=age:25
-1
-2
-                                代码块                                                            
+           
 text与keyword搜索对比测试(keyword不会被倒排索引，不会被分词)
 
 GET     /shop/_doc/_search?q=nickname:super
 GET     /shop/_doc/_search?q=username:super
 GET     /shop/_doc/_search?q=username:super hero
-1
-2
-3
-                                代码块                                                            
+                                                         
 这种方式称之为QueryString查询方式，参数都是放在url中作为请求参数的。
 
 DSL基本语法
@@ -607,6 +602,4 @@ POST         /shop2/_doc
         }
     ]
 }
-
-
 ```

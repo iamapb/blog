@@ -19,7 +19,17 @@ tags: linux
 ### 2 排除问题
 ```xml
    1 ulimit -a 查看系统的具体设置的参数
-    ![](/../../static/linux/ulimit.png)
-    系统设置的用户数较少
+   发现系统设置的用户数较少
+```
+![](/../../static/linux/ulimit.png)
+
+### 3 解决问题
+```xml
+  在/etc/security/limits.conf修改对应的参数值
+        # End of file
+        root soft nofile 65535
+        root hard nofile 65535
+        * soft nofile 65535
+        * hard nofile 65535 
 ```
 

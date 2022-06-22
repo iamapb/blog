@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="527dabbf-daf9-4041-81c1-c67569a0658e" name="Default Changelist" comment="fix" />
+    <list default="true" id="527dabbf-daf9-4041-81c1-c67569a0658e" name="Default Changelist" comment="fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/_posts/es/es分词器.md" beforeDir="false" afterPath="$PROJECT_DIR$/source/_posts/es/es分词器.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -370,6 +374,7 @@
       <workItem from="1655131956612" duration="171000" />
       <workItem from="1655622993669" duration="373000" />
       <workItem from="1655624738859" duration="2860000" />
+      <workItem from="1655907257819" duration="345000" />
     </task>
     <task id="LOCAL-00001" summary="fix">
       <created>1649566599320</created>

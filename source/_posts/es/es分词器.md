@@ -46,3 +46,5 @@ tags: es
 ik_smart中文分词器 查询结果
 ![](/../../static/es/ik%E6%9F%A5%E8%AF%A2%E4%B8%AD%E6%96%87.jpg)
 可以查询到对应字段的结果值
+
+### ik 文件描述
